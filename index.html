@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Corporate Job Application Form</h2>
+        <p>Please fill out the form accurately to apply for the position.</p>
+
+        <form id="jobForm">
+            <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" required placeholder="Rahul Sharma">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" required placeholder="example@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Mobile Number *</label>
+                <input type="tel" id="phone" required placeholder="9876543210">
+            </div>
+
+            <div class="form-group">
+                <label for="jobRole">Applying for Position *</label>
+                <select id="jobRole" required>
+                    <option value="">-- Select Job Role --</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="Video Editor / Graphic Designer">Video Editor / Graphic Designer</option>
+                    <option value="Digital Marketer">Digital Marketer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Experience (in Years) *</label>
+                <input type="number" id="experience" min="0" max="30" placeholder="0 for Fresher" required>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume (PDF/DOC) *</label>
+                <input type="file" id="resume" accept=".pdf, .doc, .docx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="coverLetter">Cover Letter / Brief Intro</label>
+                <textarea id="coverLetter" rows="4" placeholder="Briefly describe why you are a good fit for this role..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+
+        <div id="confirmationCard" class="hidden">
+            <h3>🎉 Application Submitted Successfully!</h3>
+            <div id="summaryDetails"></div>
+            <button onclick="window.location.reload()" class="reset-btn">Submit Another Response</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
