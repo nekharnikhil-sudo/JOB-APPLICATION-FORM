@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
         <h2>Corporate Job Application Form</h2>
         <p>Please fill out the form accurately to apply for the position.</p>
@@ -15,17 +14,17 @@
         <form id="jobForm">
             <div class="form-group">
                 <label for="fullName">Full Name *</label>
-                <input type="text" id="fullName" required placeholder="Rahul Sharma">
+                <input type="text" id="fullName" required placeholder="">
             </div>
 
             <div class="form-group">
                 <label for="email">Email Address *</label>
-                <input type="email" id="email" required placeholder="example@email.com">
+                <input type="email" id="email" required placeholder="">
             </div>
 
             <div class="form-group">
                 <label for="phone">Mobile Number *</label>
-                <input type="tel" id="phone" required placeholder="9876543210">
+                <input type="tel" id="phone" required placeholder="">
             </div>
 
             <div class="form-group">
@@ -36,11 +35,12 @@
                     <option value="Data Analyst">Data Analyst</option>
                     <option value="Video Editor / Graphic Designer">Video Editor / Graphic Designer</option>
                     <option value="Digital Marketer">Digital Marketer</option>
+                    <option value="others">othors</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="experience">Experience (in Years) *</label>
+                <label for="experience">work experience *</label>
                 <input type="number" id="experience" min="0" max="30" placeholder="0 for Fresher" required>
             </div>
 
@@ -51,7 +51,7 @@
 
             <div class="form-group">
                 <label for="coverLetter">Cover Letter / Brief Intro</label>
-                <textarea id="coverLetter" rows="4" placeholder="Briefly describe why you are a good fit for this role..."></textarea>
+                <textarea id="coverLetter" rows="4" placeholder="about you"></textarea>
             </div>
 
             <button type="submit" class="submit-btn">Submit Application</button>
@@ -60,7 +60,7 @@
         <div id="confirmationCard" class="hidden">
             <h3>🎉 Application Submitted Successfully!</h3>
             <div id="summaryDetails"></div>
-            <button onclick="window.location.reload()" class="reset-btn">Submit Another Response</button>
+            <button onclick="window.location.reload()" class="reset-btn">Apply Again</button>
         </div>
     </div>
 
